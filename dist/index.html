@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Cambarijan's Calculator</title>
+</head>
+<body class="bg-gray-800">
+    <div class="flex place-content-center m-24">
+        <div class="border-4 border-gray-900 bg-gray-950 rounded-lg h-96 w-80" >
+                <input id="display" type="text" class="text-end text-2xl h-24 bg-transparent text-white m-4">
+            
+            <div class="grid place-items-center gap-2 grid-cols-4 grid-row-4 mx-4">
+                <button onclick="display.value=''" class="bg-gray-400 font-bold h-10 w-14 border rounded-md">AC</button>
+                <button onclick="display.value+='/'" class="bg-gray-400 font-bold h-10 w-14 border rounded-md">/</button>
+                <button onclick="display.value+='*'" class="bg-gray-400 font-bold h-10 w-14 border rounded-md">*</button>
+                <button onclick="display.value=display.value.toString().slice(0,-1)" class="bg-gray-400 font h-10 w-14 border rounded-md">&larr;</button>
+                <button onclick="display.value+='7'" class="bg-gray-700 font-bold text-white h-10 w-14 rounded-md">7</button>
+                <button onclick="display.value+='8'" class="bg-gray-700 font-bold text-white h-10 w-14 rounded-md">8</button>
+                <button onclick="display.value+='9'" class="bg-gray-700 font-bold text-white h-10 w-14 rounded-md">9</button>
+                <button onclick="display.value+='-'" class="bg-gray-400 font-bold h-10 w-14 border rounded-md">-</button>
+                <button onclick="display.value+='4'" class="bg-gray-700 font-bold text-white h-10 w-14 rounded-md">4</button>
+                <button onclick="display.value+='5'" class="bg-gray-700 font-bold text-white h-10 w-14 rounded-md">5</button>
+                <button onclick="display.value+='6'" class="bg-gray-700 font-bold text-white h-10 w-14 rounded-md">6</button>
+                <button onclick="display.value+='+'" class="bg-gray-400 font-bold h-10 w-14 border rounded-md">+</button>
+                <button onclick="display.value+='1'" class="bg-gray-700 font-bold text-white h-10 w-14 rounded-md">1</button>
+                <button onclick="display.value+='2'" class="bg-gray-700 font-bold text-white h-10 w-14 rounded-md">2</button>
+                <button onclick="display.value+='3'" class="bg-gray-700 font-bold text-white h-10 w-14 rounded-md">3</button>
+                <button onclick="display.value+='.'" class="bg-gray-400 font-bold h-10 w-14 border rounded-md">.</button>
+                <button onclick="display.value+='0'" class="bg-gray-700 font-bold text-white h-10 w-36 rounded-md col-span-3">0</button>
+                <button onclick="display.value = eval(display.value)" class="bg-blue-500 font-bold h-10 w-14 rounded-md">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
